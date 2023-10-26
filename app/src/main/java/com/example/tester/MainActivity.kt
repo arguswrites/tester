@@ -58,8 +58,6 @@ class MainActivity : AppCompatActivity() {
 
         imgProcessor = ImageProcessor.Builder().add(ResizeOp(6400,640, ResizeOp.ResizeMethod.BILINEAR)).build()
 
-        imageView = findViewById(R.id.imageView)
-
         textureView = findViewById(R.id.textureView)
         textureView.surfaceTextureListener = object:TextureView.SurfaceTextureListener{
 
