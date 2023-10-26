@@ -98,7 +98,6 @@ class MainActivity : AppCompatActivity() {
                     textSize = h / 15f
                 }
 
-                var x = 0
                 output.forEachIndexed { index, category ->
                     val fl = category.score
                     if (fl > 0.5) {
@@ -119,7 +118,6 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
-
 
         cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
 
@@ -177,7 +175,6 @@ class MainActivity : AppCompatActivity() {
             }
         }, handler )
     }
-
 
     override fun onDestroy() {
         super.onDestroy()
